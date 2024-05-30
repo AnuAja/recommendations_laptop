@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommended Laptops</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylee.css') }}">
+</head>
+<body>
+    <h1>Recommended Laptops</h1>
+    <div class="laptop-container">
+        {% for laptop in laptops %}
+            <div class="laptop-box">
+                <h2>{{ laptop['name'] }}</h2>
+                <ul>
+                    <li><strong>Price:</strong> {{ laptop['formatted_price'] }}</li>
+                    <li><strong>Processor:</strong> {{ laptop['processor'] }}</li>
+                    <li><strong>RAM:</strong> {{ laptop['ram'] }}</li>
+                    <li><strong>OS:</strong> {{ laptop['os'] }}</li>
+                    <li><strong>Storage:</strong> {{ laptop['storage'] }}</li>
+                    <li><strong>Display:</strong> {{ laptop['display(in inch)'] }} inch</li>
+                    <li><strong>Rating:</strong> {{ laptop['rating'] }}</li>
+                </ul>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

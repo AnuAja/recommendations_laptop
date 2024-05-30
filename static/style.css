@@ -1,0 +1,87 @@
+:root {
+  --ruler: 16px;
+  --color-red: #AE1100;
+  --color-shadow: #BABECC;
+  --color-white: #FFF;
+}
+
+body {
+  background-image: url("bg.jpg");
+}
+
+body, html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+body, p, input, select, textarea, button {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -0.2px;
+  font-size: var(--ruler);
+}
+
+form {
+  background-color: var(--color-white);
+  padding: var(--ruler);
+  width: calc(var(--ruler) * 20);
+  border-radius: 10px;
+}
+
+.segment {
+  padding: calc(var(--ruler) * 2) 0;
+  text-align: center;
+  color: black;
+}
+
+.logo {
+  max-width: 300px;
+  height: auto;
+  margin-bottom: var(--ruler);
+}
+
+.form-group {
+  margin-bottom: var(--ruler);
+  text-align: center;
+}
+
+label {
+  font-family: sans-serif;
+  font-size: 1rem;
+  color: black;
+  display: block;
+  margin-bottom: 5px;
+}
+
+select {
+  font-size: 0.9rem;
+  padding: 5px 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: var(--ruler);
+}
+
+button {
+  display: block;
+  width: 100%;
+  color: rgb(255, 2, 192);
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  padding: var(--ruler);
+  background-color: var(--color-bg);
+  text-shadow: 1px 1px 0 var(--color-white);
+  box-shadow: -5px -5px 20px var(--color-white), 5px 5px 20px var(--color-shadow);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  box-shadow: -2px -2px 5px var(--color-white), 2px 2px 5px var(--color-shadow);
+}
+
+button:active {
+  box-shadow: inset 1px 1px 2px var(--color-shadow), inset -1px -1px 2px var(--color-white);
+}

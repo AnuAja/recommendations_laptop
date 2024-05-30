@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("bg.jpg");
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .laptop-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .laptop-box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    max-width: 100%;
+  }
+  
+  .laptop-box h2 {
+    margin-top: 0;
+  }
+  
+  .laptop-box ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .laptop-box ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #666;
+}
+
+.laptop-box ul li strong {
+    color: #333;
+}
+
+  
